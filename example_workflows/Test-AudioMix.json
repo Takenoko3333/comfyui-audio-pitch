@@ -1,0 +1,937 @@
+{
+  "id": "9d647b28-2a39-49b2-bf66-718b35bc1895",
+  "revision": 0,
+  "last_node_id": 27,
+  "last_link_id": 33,
+  "nodes": [
+    {
+      "id": 14,
+      "type": "AccumulateNode",
+      "pos": [
+        604.5995483398438,
+        289.0072326660156
+      ],
+      "size": [
+        317.4000244140625,
+        46
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "to_add",
+          "type": "*",
+          "link": 22
+        },
+        {
+          "name": "accumulation",
+          "shape": 7,
+          "type": "ACCUMULATION",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ACCUMULATION",
+          "type": "ACCUMULATION",
+          "links": [
+            8
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "BadCafeCode/execution-inversion-demo-comfyui",
+        "ver": "d9eebfaa1a6a33067e8c9108ef093b48279c4cbb",
+        "Node name for S&R": "AccumulateNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 2,
+      "type": "PreviewAudio",
+      "pos": [
+        645.1050415039062,
+        -323.9627380371094
+      ],
+      "size": [
+        315,
+        88
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 5
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.30",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 16,
+      "type": "Display Any (rgthree)",
+      "pos": [
+        93.09844970703125,
+        535.8681640625
+      ],
+      "size": [
+        264.5999755859375,
+        88
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "name": "source",
+          "type": "*",
+          "link": 14
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "5dc53323e07a021038af9f2a4a06ebc071f7218c",
+        "Node name for S&R": "Display Any (rgthree)"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 12,
+      "type": "ForLoopOpen",
+      "pos": [
+        -334.11151123046875,
+        161.10073852539062
+      ],
+      "size": [
+        342.5999755859375,
+        158
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "initial_value1",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "initial_value2",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "initial_value3",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "initial_value4",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "remaining",
+          "type": "INT",
+          "widget": {
+            "name": "remaining"
+          },
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "flow_control",
+          "type": "FLOW_CONTROL",
+          "links": [
+            13
+          ]
+        },
+        {
+          "name": "remaining",
+          "type": "INT",
+          "links": [
+            10
+          ]
+        },
+        {
+          "name": "value1",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "value2",
+          "type": "*",
+          "links": [
+            7
+          ]
+        },
+        {
+          "name": "value3",
+          "type": "*",
+          "links": [
+            17
+          ]
+        },
+        {
+          "name": "value4",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "BadCafeCode/execution-inversion-demo-comfyui",
+        "ver": "d9eebfaa1a6a33067e8c9108ef093b48279c4cbb",
+        "Node name for S&R": "ForLoopOpen"
+      },
+      "widgets_values": [
+        2
+      ]
+    },
+    {
+      "id": 13,
+      "type": "ForLoopClose",
+      "pos": [
+        1098.8115234375,
+        159.9315643310547
+      ],
+      "size": [
+        267,
+        106
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "flow_control",
+          "type": "FLOW_CONTROL",
+          "link": 13
+        },
+        {
+          "name": "initial_value1",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "initial_value2",
+          "shape": 7,
+          "type": "*",
+          "link": 8
+        },
+        {
+          "name": "initial_value3",
+          "shape": 7,
+          "type": "*",
+          "link": 19
+        },
+        {
+          "name": "initial_value4",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "value1",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "value2",
+          "type": "*",
+          "links": [
+            12
+          ]
+        },
+        {
+          "name": "value3",
+          "type": "*",
+          "links": [
+            20
+          ]
+        },
+        {
+          "name": "value4",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "BadCafeCode/execution-inversion-demo-comfyui",
+        "ver": "d9eebfaa1a6a33067e8c9108ef093b48279c4cbb",
+        "Node name for S&R": "ForLoopClose"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 19,
+      "type": "Display Any (rgthree)",
+      "pos": [
+        1500.7530517578125,
+        246.7431640625
+      ],
+      "size": [
+        264.5999755859375,
+        88
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "name": "source",
+          "type": "*",
+          "link": 20
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "5dc53323e07a021038af9f2a4a06ebc071f7218c",
+        "Node name for S&R": "Display Any (rgthree)"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 18,
+      "type": "AccumulateNode",
+      "pos": [
+        132.19947814941406,
+        749.4067993164062
+      ],
+      "size": [
+        317.4000244140625,
+        46
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "to_add",
+          "type": "*",
+          "link": 18
+        },
+        {
+          "name": "accumulation",
+          "shape": 7,
+          "type": "ACCUMULATION",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ACCUMULATION",
+          "type": "ACCUMULATION",
+          "links": [
+            19
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "BadCafeCode/execution-inversion-demo-comfyui",
+        "ver": "d9eebfaa1a6a33067e8c9108ef093b48279c4cbb",
+        "Node name for S&R": "AccumulateNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 20,
+      "type": "F5TTSAudioAdvanced",
+      "pos": [
+        565.753662109375,
+        445.84344482421875
+      ],
+      "size": [
+        400,
+        478
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "sample_audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "speed",
+          "type": "FLOAT",
+          "widget": {
+            "name": "speed"
+          },
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-f5-tts",
+        "ver": "1e6487bf51d2bd6b2887b1237c1a837f4baf170a",
+        "Node name for S&R": "F5TTSAudioAdvanced"
+      },
+      "widgets_values": [
+        "F5TTS_test_en_1_ref_short.chipmunk.wav",
+        "This is what I want to say",
+        1595,
+        "randomize",
+        "F5",
+        "auto",
+        1,
+        "F5TTS_Base",
+        "Text of sample_audio",
+        0.1,
+        0.15,
+        32,
+        2,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "id": 17,
+      "type": "PrimitiveInt",
+      "pos": [
+        -773.4473266601562,
+        280.84326171875
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            15,
+            16
+          ]
+        }
+      ],
+      "title": "Times you want to run: Int",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.30",
+        "Node name for S&R": "PrimitiveInt"
+      },
+      "widgets_values": [
+        2,
+        "fixed"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "SimpleMath+",
+      "pos": [
+        85.9760971069336,
+        331.3758239746094
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a",
+          "shape": 7,
+          "type": "INT,FLOAT",
+          "link": 10
+        },
+        {
+          "name": "b",
+          "shape": 7,
+          "type": "INT,FLOAT",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            14,
+            18,
+            21
+          ]
+        }
+      ],
+      "title": "Range of number: 🔧 Simple Math",
+      "properties": {
+        "cnr_id": "comfyui_essentials",
+        "ver": "1.1.0",
+        "Node name for S&R": "SimpleMath+"
+      },
+      "widgets_values": [
+        "((b-a)*0.5)+1"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "F5TTSAudioAdvanced",
+      "pos": [
+        -371.3675231933594,
+        -373.536865234375
+      ],
+      "size": [
+        400,
+        478
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "sample_audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-f5-tts",
+        "ver": "1e6487bf51d2bd6b2887b1237c1a837f4baf170a",
+        "Node name for S&R": "F5TTSAudioAdvanced"
+      },
+      "widgets_values": [
+        "F5TTS_test_en_1_ref_short.chipmunk.wav",
+        "This is what I want to say",
+        836,
+        "fixed",
+        "F5",
+        "auto",
+        1,
+        "F5TTS_Base",
+        "Text of sample_audio",
+        0.10000000000000002,
+        0.15000000000000002,
+        32,
+        2,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "id": 9,
+      "type": "AccumulationToListNode",
+      "pos": [
+        1127.35498046875,
+        391.92010498046875
+      ],
+      "size": [
+        252,
+        26
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "accumulation",
+          "type": "ACCUMULATION",
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "shape": 6,
+          "type": "*",
+          "links": [
+            6,
+            29
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "BadCafeCode/execution-inversion-demo-comfyui",
+        "ver": "d9eebfaa1a6a33067e8c9108ef093b48279c4cbb",
+        "Node name for S&R": "AccumulationToListNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 26,
+      "type": "AudioMix",
+      "pos": [
+        1647.5452880859375,
+        559.4403686523438
+      ],
+      "size": [
+        315,
+        310
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio1",
+          "type": "AUDIO",
+          "link": 29
+        },
+        {
+          "name": "audio2",
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "audio3",
+          "type": "AUDIO",
+          "link": 33
+        },
+        {
+          "name": "audio4",
+          "type": "AUDIO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            30
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AudioMix"
+      },
+      "widgets_values": [
+        false,
+        1.0000000000000002,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "type": "SaveAudio",
+      "pos": [
+        1121.5029296875,
+        515.1337890625
+      ],
+      "size": [
+        315,
+        112
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 6
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.30",
+        "Node name for S&R": "SaveAudio"
+      },
+      "widgets_values": [
+        "audio/ComfyUI"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "LoadAudio",
+      "pos": [
+        1145.538818359375,
+        742.375244140625
+      ],
+      "size": [
+        342.5999755859375,
+        136
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            33
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.30",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "F5TTS_test_en_1_ref_short.deep.wav",
+        null,
+        null
+      ]
+    },
+    {
+      "id": 22,
+      "type": "PreviewAudio",
+      "pos": [
+        2114.74853515625,
+        559.6651000976562
+      ],
+      "size": [
+        315,
+        88
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 30
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.30",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      5,
+      8,
+      0,
+      2,
+      0,
+      "AUDIO"
+    ],
+    [
+      6,
+      9,
+      0,
+      10,
+      0,
+      "AUDIO"
+    ],
+    [
+      7,
+      12,
+      3,
+      14,
+      1,
+      "ACCUMULATION"
+    ],
+    [
+      8,
+      14,
+      0,
+      13,
+      2,
+      "*"
+    ],
+    [
+      10,
+      12,
+      1,
+      15,
+      0,
+      "INT,FLOAT"
+    ],
+    [
+      12,
+      13,
+      1,
+      9,
+      0,
+      "ACCUMULATION"
+    ],
+    [
+      13,
+      12,
+      0,
+      13,
+      0,
+      "FLOW_CONTROL"
+    ],
+    [
+      14,
+      15,
+      1,
+      16,
+      0,
+      "*"
+    ],
+    [
+      15,
+      17,
+      0,
+      15,
+      1,
+      "INT,FLOAT"
+    ],
+    [
+      16,
+      17,
+      0,
+      12,
+      4,
+      "INT"
+    ],
+    [
+      17,
+      12,
+      4,
+      18,
+      1,
+      "ACCUMULATION"
+    ],
+    [
+      18,
+      15,
+      1,
+      18,
+      0,
+      "*"
+    ],
+    [
+      19,
+      18,
+      0,
+      13,
+      3,
+      "*"
+    ],
+    [
+      20,
+      13,
+      2,
+      19,
+      0,
+      "*"
+    ],
+    [
+      21,
+      15,
+      1,
+      20,
+      1,
+      "FLOAT"
+    ],
+    [
+      22,
+      20,
+      0,
+      14,
+      0,
+      "*"
+    ],
+    [
+      29,
+      9,
+      0,
+      26,
+      0,
+      "AUDIO"
+    ],
+    [
+      30,
+      26,
+      0,
+      22,
+      0,
+      "AUDIO"
+    ],
+    [
+      33,
+      24,
+      0,
+      26,
+      2,
+      "AUDIO"
+    ]
+  ],
+  "groups": [],
+  "config": {
+    "links_ontop": false
+  },
+  "extra": {
+    "ds": {
+      "scale": 0.8264462809917361,
+      "offset": [
+        -1052.3688829691168,
+        -360.01516567277866
+      ]
+    },
+    "frontendVersion": "1.17.11",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

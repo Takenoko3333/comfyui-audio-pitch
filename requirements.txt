@@ -1,0 +1,4 @@
+torchaudio
+audiostretchy
+torch-time-stretch
+librosa

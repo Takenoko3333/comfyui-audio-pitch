@@ -1,0 +1,14 @@
+[project]
+name = "audio-general-ComfyUI"
+description = "General audio nodes.  Mix, Bass/Treble, Concatenate, Pitch, Add/remove silence, Speed"
+version = "1.0.0"
+license = {text = "MIT License"}
+
+[project.urls]
+Repository = "https://github.com/niknah/audio-general-ComfyUI"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "niknah"
+DisplayName = "Audio General"
+Icon = ""
