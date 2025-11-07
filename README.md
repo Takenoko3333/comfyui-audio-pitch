@@ -1,4 +1,4 @@
-## Nodes...
+## Nodes
 
 - Audio Pitch (Mono)
 
@@ -20,7 +20,8 @@ Restart ComfyUI.
 
 ## Examples
 
-example_workflows\audio-pitch-sample.json
+example_workflows\audio-pitch-sample.json<br>
+[https://github.com/Takenoko3333/comfyui-audio-pitch/blob/main/example_workflows/audio-pitch-sample.json](https://github.com/Takenoko3333/comfyui-audio-pitch/blob/main/example_workflows/audio-pitch-sample.json)
 
 ## Purpose
 
