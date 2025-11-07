@@ -1,4 +1,1 @@
-torchaudio
-audiostretchy
-torch-time-stretch
-librosa
+# No extra deps required. Uses torch already provided by ComfyUI.
